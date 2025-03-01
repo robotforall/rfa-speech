@@ -1,6 +1,9 @@
-# RobotForAll www.robotforall.net
-
 #!/usr/bin/env python
+#
+# RobotForAll www.robotforall.net
+#
+# Authors: Jeffrey Tan <i@jeffreytan.org>
+
 import rospy
 from std_msgs.msg import String
 import speech_recognition as sr

@@ -1,6 +1,9 @@
-# RobotForAll www.robotforall.net
-
 #!/usr/bin/env python
+#
+# RobotForAll www.robotforall.net
+#
+# Authors: Jeffrey Tan <i@jeffreytan.org>
+
 import rospy
 from std_msgs.msg import String
 from gtts import gTTS
@@ -20,7 +23,7 @@ def googletts():
     rospy.init_node('googletts', anonymous=True)
 
     rospy.Subscriber("input", String, callback)
-
+    print(">>> Waiting for input text...")
     rospy.spin()
 
 if __name__ == '__main__':

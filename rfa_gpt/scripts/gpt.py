@@ -32,11 +32,11 @@ def ask_gpt(msg):
 
 def callback(data):
     msg = data.data
-    #if msg is not '' or msg is not None:
     if msg != '' or msg != None:
         response = ask_gpt(msg)
-        print(response)
-        pub.publish(response)
+        response_str = response.decode("utf-8")
+        print(response_str)
+        pub.publish(response_str)
 
 def main():
     init()

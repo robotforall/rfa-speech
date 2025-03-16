@@ -26,7 +26,7 @@ def get_cofig(config_file):
 
 #initialize to get config
 def init(pkg_path):
-    config_file = pkg_path+'/config/var.yaml'
+    config_file = pkg_path+'/config/deepseek.yaml'
     var_list = get_cofig(config_file)
     return var_list
 
